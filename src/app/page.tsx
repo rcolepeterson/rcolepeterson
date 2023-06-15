@@ -20,7 +20,7 @@ const HomePage: NextPage = () => {
   return (
     <section>
       {/* <HamburgerMenu onClick={handleScroll} /> */}
-      <div className="bg-white py-16 px-4">
+      <div className="bg-white pt-2 pb-16 md:py-16  px-4">
         <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl">
           <div className="flex items-center gap-x-4">
             <Image
@@ -35,13 +35,13 @@ const HomePage: NextPage = () => {
               R. Cole Peterson
             </h1>
           </div>
-          <p className="max-w-2xl my-6 font-light text-gray-600  md:text-lg lg:text-xl">
+          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600  md:text-lg lg:text-xl">
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
             designers, product managers, strategists, and developers to concept,
             prototype, and execute on a range of products.
           </p>
-          <p className="max-w-2xl mb-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
             In other words, I build web apps with cool people. These creations
             end up as experiments, prototypes for pitches, and sometimes in
             production for a client.
