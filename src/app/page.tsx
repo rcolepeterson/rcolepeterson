@@ -20,7 +20,7 @@ const HomePage: NextPage = () => {
   return (
     <section className="">
       {/* <HamburgerMenu onClick={handleScroll} /> */}
-      <div className="bg-white py-4 mx-auto px-4" id="about">
+      <div className="bg-white py-2 md:py-10 mx-auto px-4" id="about">
         <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl">
           <div className="flex items-center gap-x-4">
             <Image
