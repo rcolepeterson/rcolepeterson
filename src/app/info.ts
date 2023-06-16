@@ -90,9 +90,7 @@ export const awards: AwardProps[] = [
   },
 ];
 
-// the folowing are a list of protoypes for the projects page
-// an array of prototype objects
-type PrototypeProps = {
+export type PrototypeProps = {
   name: string;
   description: string;
   tech: string;
@@ -129,5 +127,11 @@ export const prototypes: PrototypeProps[] = [
     description:
       "Web App listens to the user's video game chat and detects if they are being bullied.",
     tech: "React, Web Speech API, TensorFlowJS",
+  },
+  {
+    name: "Beer Scan",
+    description:
+      "Web App that detects various beverages and displays information about them.",
+    tech: "React, WebCam, TensorFlowJS",
   },
 ];
