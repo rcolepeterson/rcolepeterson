@@ -117,6 +117,7 @@ const HomePage: NextPage = () => {
                     {proto.link}
                   </Link>
                 )}
+                <p className="text-sm">Tech: {proto.tech}</p>
               </div>
             </div>
           ))}
