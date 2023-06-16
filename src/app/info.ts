@@ -41,3 +41,44 @@ export const projects: ProjectProps[] = [
     link: "https://www.wundermanthompson.com/work/smallpox-simulator",
   },
 ];
+
+// an array of award objects
+type AwardProps = {
+  name: string;
+  description: string;
+  client: string;
+  link: string;
+  issuedBy: string;
+};
+
+export const awards: AwardProps[] = [
+  {
+    name: "Creative B2B Lions Grand Prix",
+    client: "Sherwin Williams",
+    description: "Speaking In Color",
+    link: "https://www.wundermanthompson.com/news/grand-prix-for-speaking-in-color",
+    issuedBy: "Cannes Lions International Festival of Creativity",
+  },
+
+  {
+    name: "Addy's Gold & Judges Choice",
+    client: "Saudi Telecom Company",
+    description: "Meet Sarha – The World’s First Content-Creating Camel",
+    link: "https://www.wundermanthompson.com/work/meet-sarha",
+    issuedBy: "American Advertising Federation",
+  },
+  {
+    name: "The Dubai Lynx Grand Prix for Mobile",
+    client: "Hungerstation",
+    description: "The Subconscious Order",
+    link: "https://www.wundermanthompson.com/work/the-subconscious-order",
+    issuedBy: "The Dubai Lynx",
+  },
+  {
+    name: "Silver Clio",
+    client: "Meridian",
+    description: "Smallpox Simulator",
+    link: "https://www.wundermanthompson.com/news/two-gold-at-clio-health-for-wunderman-thompson-health",
+    issuedBy: "Clios",
+  },
+];

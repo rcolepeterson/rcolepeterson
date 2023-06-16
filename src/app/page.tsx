@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { projects } from "./info";
+import { projects, awards } from "./info";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
 import Mailto from "./components/mailto";
@@ -85,7 +85,7 @@ const HomePage: NextPage = () => {
                 <p>{project.description}</p>
                 <Link
                   href={project.link}
-                  className="btn mt-6 bg-primary font-bold text-black pt-4 inline-block border-b-2 border-transparent hover:border-primary transition duration-300 ease-in-out"
+                  className="btn mt-6 bg-primary font-bold text-black pt-4 inline-block border-transparent"
                 >
                   Case Study
                 </Link>
@@ -114,14 +114,28 @@ const HomePage: NextPage = () => {
           <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white">
             Awards
           </h4>
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl dark:text-gray-400">
-            JavaScript, TypeScript, React, Next.js, Node, Tailwind among others.
-          </p>
-          <p className="max-w-2xl mt-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Expert in integrating various 3rd party APIs with innovative
-            technology and relevant data to develop novel and imaginative
-            applications.
-          </p>
+          {awards.map((award, i) => (
+            <div className="flex flex-col " key={`work-stuff-${i}`}>
+              <div className="pb-6">
+                <h6 className="font-bold">{award.name}</h6>
+                <p>Project: {award.description}</p>
+                <p>Client: {award.client}</p>
+                <p>Issued By: {award.issuedBy}</p>
+                <Link
+                  href={award.link}
+                  className="mt-6  font-bold text-black underline"
+                >
+                  Read More
+                </Link>
+              </div>
+            </div>
+          ))}
+          <Link
+            className="underline "
+            href="https://www.linkedin.com/in/colepetersonrocks/details/honors/"
+          >
+            More
+          </Link>
         </div>
       </div>
       <div className="bg-gray-900 text-white px-4" id="contact">
