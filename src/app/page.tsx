@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { projects, awards } from "./info";
+import { projects, awards, prototypes } from "./info";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
 import Mailto from "./components/mailto";
@@ -72,7 +72,7 @@ const HomePage: NextPage = () => {
           {projects.map((project, i) => (
             <div
               className="flex flex-col md:flex-row pt-8 "
-              key={`work-stuff-${i}`}
+              key={`project-stuff-${i}`}
             >
               <Image
                 src={project.image}
@@ -94,19 +94,32 @@ const HomePage: NextPage = () => {
           ))}
         </div>
       </div>
-      <div className="bg-gray-50 px-4" id="prototypes">
+      <div className="bg-gray-50 px-4">
         <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white">
+          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Prototypes
           </h4>
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl dark:text-gray-400">
-            JavaScript, TypeScript, React, Next.js, Node, Tailwind among others.
+          <p className="max-w-2xl mb-4 font-light text-gray-600 md:text-lg lg:text-xl">
+            List of prototypes my team at Wunderman Thompson has built for fun,
+            pitches, and experiments. We mostly use React / NextJS, Firebase,
+            various 3rd party APIs and some custom backend stuff.
           </p>
-          <p className="max-w-2xl mt-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Expert in integrating various 3rd party APIs with innovative
-            technology and relevant data to develop novel and imaginative
-            applications.
-          </p>
+          {prototypes.map((proto, i) => (
+            <div className="flex flex-col " key={`proto-stuff-${i}`}>
+              <div className="pb-6">
+                <h6 className="font-bold">{proto.name}</h6>
+                <p>{proto.description}</p>
+                {proto.link && (
+                  <Link
+                    href={proto.link}
+                    className="underline text-black inline-block border-transparent"
+                  >
+                    {proto.link}
+                  </Link>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="bg-white px-4">
@@ -115,7 +128,7 @@ const HomePage: NextPage = () => {
             Awards
           </h4>
           {awards.map((award, i) => (
-            <div className="flex flex-col " key={`work-stuff-${i}`}>
+            <div className="flex flex-col " key={`award-stuff-${i}`}>
               <div className="pb-6">
                 <h6 className="font-bold">{award.name}</h6>
                 <p>Project: {award.description}</p>

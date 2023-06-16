@@ -23,13 +23,13 @@ export const projects: ProjectProps[] = [
   {
     name: "Sherwin Williams: Speaking In Color",
     description:
-      "Voice-activated AI color system that produces hues based on human inspiration",
+      "Voice-activated AI color system that produces hues based on human inspiration.",
     image: "/images/sic.webp",
     link: "https://www.wundermanthompson.com/work/speaking-in-color",
   },
   {
     name: "Saudi Telecom Company: Meet Sarha",
-    description: "Meet Sarha – The World’s First Content-Creating Camel",
+    description: "Meet Sarha – The World’s First Content-Creating Camel.",
     image: "/images/sarha.webp",
     link: "https://www.wundermanthompson.com/work/meet-sarha",
   },
@@ -39,6 +39,13 @@ export const projects: ProjectProps[] = [
       "The tool, created for Meridian, maps how potential outbreaks might occur throughout the world.",
     image: "/images/smallpox-simulator.webp",
     link: "https://www.wundermanthompson.com/work/smallpox-simulator",
+  },
+  {
+    name: "A.Iran",
+    description:
+      "A.I. written stories about the future of woman's rights in Iran based on user actions.",
+    image: "/images/airan.png",
+    link: "https://www.wundermanthompson.com/work/a-iran",
   },
 ];
 
@@ -80,5 +87,47 @@ export const awards: AwardProps[] = [
     description: "Smallpox Simulator",
     link: "https://www.wundermanthompson.com/news/two-gold-at-clio-health-for-wunderman-thompson-health",
     issuedBy: "Clios",
+  },
+];
+
+// the folowing are a list of protoypes for the projects page
+// an array of prototype objects
+type PrototypeProps = {
+  name: string;
+  description: string;
+  tech: string;
+  link?: string;
+};
+
+export const prototypes: PrototypeProps[] = [
+  {
+    name: "Banter AI",
+    description:
+      "Prototype designed to show the promise of real-time AI-assisted communication",
+    tech: "React, Speechly, ChatGPT-2",
+    link: "https://bantercaas.com",
+  },
+  {
+    name: "Beer Gust",
+    description:
+      "Web App that discounts beer at sporting events based on the weather and the user's seat locaion.",
+    tech: "React, Firebase, OpenWeather API",
+  },
+  {
+    name: "Music Match",
+    description: "Web App that suggests makeup based on their music taste.",
+    tech: "React, Firebase, Spotify API",
+  },
+  {
+    name: "Mood Mirror",
+    description:
+      "Web App talks to the user about their mood, appearence and more.",
+    tech: "React, WebCam API, TensorFlowJS",
+  },
+  {
+    name: "Bully Chat",
+    description:
+      "Web App listens to the user's video game chat and detects if they are being bullied.",
+    tech: "React, Web Speech API, TensorFlowJS",
   },
 ];
