@@ -21,6 +21,8 @@ const Prototypes: React.FC<Props> = ({ prototypes }) => {
           <div className="pb-6">
             <h6 className="font-bold">{proto.name}</h6>
             <p>{proto.description}</p>
+
+            <p>Tech: {proto.tech}</p>
             {proto.link && (
               <a
                 href={proto.link}
@@ -29,7 +31,6 @@ const Prototypes: React.FC<Props> = ({ prototypes }) => {
                 {proto.link}
               </a>
             )}
-            <p className="text-sm">Tech: {proto.tech}</p>
           </div>
         </div>
       ))}
