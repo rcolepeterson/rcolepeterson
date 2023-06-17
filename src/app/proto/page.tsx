@@ -1,13 +1,25 @@
 import { NextPage } from "next";
 import Prototypes from "../components/prototypes";
-import { projects, awards, prototypes } from "../info";
+import Logo from "../components/Logo";
+import { prototypes } from "../info";
+import Link from "next/link";
 const HomePage: NextPage = () => {
   return (
-    <div className="pt-2 pb-16 md:py-16 px-4">
-      <div className="mx-auto max-w-screen-xl">
-        <Prototypes prototypes={prototypes} />
+    <section>
+      <div className="bg-white pt-2 md:py-16 px-4">
+        <div className="mx-auto max-w-screen-xl">
+          <Link href="/">
+            <Logo />
+          </Link>
+        </div>
       </div>
-    </div>
+
+      <div className="bg-gray-50 px-4">
+        <div className="mx-auto max-w-screen-xl py-16">
+          <Prototypes prototypes={prototypes} />
+        </div>
+      </div>
+    </section>
   );
 };
 export default HomePage;

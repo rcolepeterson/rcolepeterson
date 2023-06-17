@@ -2,10 +2,11 @@ import { NextPage } from "next";
 import { projects, awards, prototypes } from "./info";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
+import Logo from "./components/Logo";
 import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
 import Link from "next/link";
-import avatar from "./avatar.jpg";
+
 // import HamburgerMenu from "./components/HamburgerMenu";
 
 const HomePage: NextPage = () => {
@@ -21,21 +22,9 @@ const HomePage: NextPage = () => {
   return (
     <section>
       {/* <HamburgerMenu onClick={handleScroll} /> */}
-      <div className="bg-white pt-2 pb-16 md:py-16  px-4">
-        <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl">
-          <div className="flex items-center gap-x-4">
-            <Image
-              alt={"name"}
-              className="rounded-full my-4"
-              src={avatar}
-              placeholder="blur"
-              width={100}
-              priority
-            />
-            <h1 className="max-w-2xl text-2xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl">
-              R. Cole Peterson
-            </h1>
-          </div>
+      <div className="bg-white pt-2 pb-16 md:py-16 px-4">
+        <div className="mx-auto max-w-screen-xl">
+          <Logo />
           <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600  md:text-lg lg:text-xl">
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
