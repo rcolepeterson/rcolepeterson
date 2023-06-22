@@ -60,7 +60,14 @@ type AwardProps = {
 
 export const awards: AwardProps[] = [
   {
-    name: "Creative B2B Lions Grand Prix",
+    name: "Creative Commerce Lion Grand Prix",
+    client: "Hunger Station",
+    description: "Subcincious Order",
+    link: "https://www.wundermanthompson.com/work/the-subconscious-order",
+    issuedBy: "Cannes Lions International Festival of Creativity",
+  },
+  {
+    name: "Creative B2B Lion Grand Prix",
     client: "Sherwin Williams",
     description: "Speaking In Color",
     link: "https://www.wundermanthompson.com/news/grand-prix-for-speaking-in-color",

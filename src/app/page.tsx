@@ -7,22 +7,22 @@ import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
 import Link from "next/link";
 
-// import HamburgerMenu from "./components/HamburgerMenu";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 const HomePage: NextPage = () => {
-  // const handleScroll = () => {
-  //   const targetElement = document.querySelector("#prototypes");
-  //   if (targetElement) {
-  //     targetElement.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start",
-  //     });
-  //   }
-  // };
   return (
     <section>
-      {/* <HamburgerMenu onClick={handleScroll} /> */}
+      <HamburgerMenu />
       <div className="bg-white pt-2 pb-16 md:py-16 px-4">
+        {/* <div
+          className="overflow-hidden bg-no-repeat bg-cover absolute min-w-full top-0 z-[1]"
+          style={{
+            backgroundPosition: "0% 36%",
+            backgroundImage: `url('/images/francis_peterson.jpeg')`,
+            width: "100%",
+            paddingBottom: "33%",
+          }}
+        ></div> */}
         <div className="mx-auto max-w-screen-xl">
           <Logo />
           <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600  md:text-lg lg:text-xl">
@@ -39,15 +39,15 @@ const HomePage: NextPage = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 px-4">
+      <div className="bg-gray-50 px-4" id="skills">
         <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white">
+          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Skills
           </h4>
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
             JavaScript, TypeScript, React, Next.js, Node.
           </p>
-          <p className="max-w-2xl mt-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl mt-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl">
             Expert in integrating various 3rd party APIs with innovative
             technology and relevant data to develop novel and imaginative
             applications.
@@ -56,7 +56,7 @@ const HomePage: NextPage = () => {
       </div>
       <div className="bg-gray-900 text-white px-4" id="work">
         <div className="mx-auto place-self-center max-w-screen-xl py-16">
-          <h4 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white mb-8 md:mt-0">
+          <h4 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl mb-8 md:mt-0">
             Work
           </h4>
           {projects.map((project, i) => (
@@ -85,7 +85,7 @@ const HomePage: NextPage = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 px-4 ">
+      <div className="bg-gray-50 px-4" id="proto">
         <div className="mx-auto  max-w-screen-xl py-16">
           <Prototypes
             prototypes={prototypes.filter((item, index) => index < 3)}
@@ -95,9 +95,9 @@ const HomePage: NextPage = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-white px-4">
+      <div className="bg-white px-4" id="awards">
         <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white">
+          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Awards
           </h4>
           {awards.map((award, i) => (
@@ -156,7 +156,7 @@ const HomePage: NextPage = () => {
             R. Cole Peterson
           </h5>
 
-          <p className="max-w-2xl font-light md:text-lg lg:text-xl dark:text-gray-400 ">
+          <p className="max-w-2xl font-light md:text-lg lg:text-xl">
             <span className="font-bold">Contact: </span>
             <Mailto email="rcolepeterson@gmail.com" />
           </p>

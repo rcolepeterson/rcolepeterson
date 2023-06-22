@@ -1,11 +1,20 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 
-const HamburgerMenu = ({ onClick }) => {
+const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
+  };
+  const handleScroll = (item) => {
+    const targetElement = document.querySelector(`#${item}`);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   const linkstyle = `flex text-xl py-2 hover:text-primary`;
@@ -27,15 +36,15 @@ const HamburgerMenu = ({ onClick }) => {
         >
           <ul>
             <div className="flex flex-col">
-              {[1, 2, 3].map((item, index) => {
+              {["work", "skills", "awards"].map((item, index) => {
                 return (
                   <li className="" key={`${index}-menu-item`}>
                     <div
-                      className="capitalize font-titillium-web"
-                      onClick={onClick}
+                      className="capitalize font-titillium-web cursor-pointer"
+                      onClick={() => handleScroll(item)}
                     >
                       <div className={`${linkstyle}`}>
-                        <span className="font-bold">Home</span>
+                        <span className="font-bold">{item}</span>
                       </div>
                     </div>
                   </li>
