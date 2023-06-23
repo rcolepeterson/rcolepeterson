@@ -7,25 +7,64 @@ import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
 import Link from "next/link";
 
-import HamburgerMenu from "./components/HamburgerMenu";
+import TopMenu from "./components/TopMenu";
 
 const HomePage: NextPage = () => {
   return (
     <section>
-      <HamburgerMenu />
-      <div className="bg-white pt-2 pb-16 md:py-16 px-4">
-        {/* <div
-          className="overflow-hidden bg-no-repeat bg-cover absolute min-w-full top-0 z-[1]"
-          style={{
-            backgroundPosition: "0% 36%",
-            backgroundImage: `url('/images/francis_peterson.jpeg')`,
-            width: "100%",
-            paddingBottom: "33%",
-          }}
-        ></div> */}
-        <div className="mx-auto max-w-screen-xl">
-          <Logo />
-          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600  md:text-lg lg:text-xl">
+      <TopMenu />
+      {/* <div className="bg-zinc-100 py-16 md:py-32 px-4 flex justify-center items-center relative">
+        <div className="mx-auto max-w-screen-xl text-left">
+          <h1 className="uppercase text-6xl">r. cole peterson</h1>
+          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600 md:text-lg lg:text-xl">
+            Responsible for leading highly collaborative teams to create
+            world-class digital products and experiences. I work closely with
+            designers, product managers, strategists, and developers to concept,
+            prototype, and execute on a range of products.
+          </p>
+          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
+            In other words, I build web apps with cool people. These creations
+            end up as experiments, prototypes for pitches, and sometimes in
+            production for a client.
+          </p>
+        </div>
+        <div className="hidden md:block absolute inset-0">
+          <div
+            className="h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/francis_peterson.jpeg')",
+            }}
+          />
+        </div>
+        <div className="md:hidden mt-8">
+          <img
+            className="w-full"
+            src="/images/francis_peterson.jpeg"
+            alt="Mountains"
+          />
+        </div>
+      </div> */}
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage: "url('/images/francis_peterson.jpeg')",
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md text-white">
+            {/* <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">Maker</p> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="px-4" id="about">
+        <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
+          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
+            About
+          </h4>
+          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600 md:text-lg lg:text-xl">
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
             designers, product managers, strategists, and developers to concept,
@@ -38,12 +77,12 @@ const HomePage: NextPage = () => {
           </p>
         </div>
       </div>
-
       <div className="bg-gray-50 px-4" id="skills">
-        <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
+        <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
           <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Skills
           </h4>
+
           <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
             JavaScript, TypeScript, React, Next.js, Node.
           </p>
@@ -55,8 +94,8 @@ const HomePage: NextPage = () => {
         </div>
       </div>
       <div className="bg-gray-900 text-white px-4" id="work">
-        <div className="mx-auto place-self-center max-w-screen-xl py-16">
-          <h4 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl mb-8 md:mt-0">
+        <div className="mx-auto max-w-screen-xl py-16">
+          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Work
           </h4>
           {projects.map((project, i) => (
@@ -96,7 +135,7 @@ const HomePage: NextPage = () => {
         </div>
       </div>
       <div className="bg-white px-4" id="awards">
-        <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
+        <div className="mx-auto  lg:col-span-7 max-w-screen-xl py-16">
           <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Awards
           </h4>
@@ -125,7 +164,7 @@ const HomePage: NextPage = () => {
         </div>
       </div>
       <div className="bg-gray-900 text-white px-4" id="contact">
-        <div className="mx-auto place-self-center lg:col-span-7 max-w-screen-xl py-16">
+        <div className="mx-auto  lg:col-span-7 max-w-screen-xl py-16">
           <div className="flex flex-col mb-8">
             <h6 className="uppercase font-bold mb-2">social</h6>
             <div className="flex flex-row gap-x-4 items-center">

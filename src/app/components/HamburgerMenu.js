@@ -36,7 +36,7 @@ const HamburgerMenu = () => {
         >
           <ul>
             <div className="flex flex-col">
-              {["work", "skills", "awards"].map((item, index) => {
+              {["work", "about", "skills", "awards"].map((item, index) => {
                 return (
                   <li className="" key={`${index}-menu-item`}>
                     <div
