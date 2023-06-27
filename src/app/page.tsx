@@ -52,6 +52,8 @@ const HomePage: NextPage = () => {
       >
         {/* <div className="hero-overlay bg-opacity-60"></div> */}
         <div className="text-center">
+          {/* https://codepen.io/alvarotrigo/pen/poOOZYZ */}
+          {/* https://alvarotrigo.com/blog/animated-backgrounds-css/ */}
           <div className="text-container">
             <h1>MAKER</h1>
           </div>

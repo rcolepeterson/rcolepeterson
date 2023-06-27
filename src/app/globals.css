@@ -124,3 +124,7 @@ body {
     background-position: right top;
   }
 }
+
+* {
+  scroll-margin-top: 90px;
+}
