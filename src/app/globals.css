@@ -97,6 +97,8 @@ body {
   background-image: url("/images/francis_peterson.jpeg");
   background-repeat: repeat;
   background-clip: text;
+  /* scale image to be larger */
+  background-size: 1000px;
   animation: animate 15s ease-in-out infinite;
   text-align: center;
   text-transform: uppercase;
@@ -112,13 +114,13 @@ body {
 @keyframes animate {
   0%,
   100% {
-    background-position: left top;
+    background-position: left center;
   }
   25% {
-    background-position: right bottom;
+    background-position: right center;
   }
   50% {
-    background-position: left bottom;
+    background-position: left top;
   }
   75% {
     background-position: right top;
