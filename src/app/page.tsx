@@ -45,17 +45,20 @@ const HomePage: NextPage = () => {
         </div>
       </div> */}
       <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage: "url('/images/francis_peterson.jpeg')",
-        }}
+        className="hero min-h-screen bg-black"
+        // style={{
+        //   backgroundImage: "url('/images/francis_peterson.jpeg')",
+        // }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md text-white">
-            {/* <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">Maker</p> */}
+        {/* <div className="hero-overlay bg-opacity-60"></div> */}
+        <div className="text-center">
+          <div className="text-container">
+            <h1>MAKER</h1>
           </div>
+          {/* <div className="max-w-md text-white">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">Maker</p>
+          </div> */}
         </div>
         <ScrollIndicator />
       </div>
@@ -94,7 +97,7 @@ const HomePage: NextPage = () => {
           </p>
         </div>
       </div>
-      <div className="bg-gray-900 text-white px-4" id="work">
+      <div className="bg-black text-white px-4" id="work">
         <div className="mx-auto max-w-screen-xl py-16">
           <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             Work
@@ -106,7 +109,7 @@ const HomePage: NextPage = () => {
             >
               <Image
                 src={project.image}
-                alt="Shoes"
+                alt={project.name}
                 width={400}
                 height={225}
               ></Image>
@@ -164,7 +167,7 @@ const HomePage: NextPage = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-gray-900 text-white px-4" id="contact">
+      <div className="bg-black text-white px-4" id="contact">
         <div className="mx-auto  lg:col-span-7 max-w-screen-xl py-16">
           <div className="flex flex-col mb-8">
             <h6 className="uppercase font-bold mb-2">social</h6>
