@@ -120,8 +120,9 @@ export const prototypes: PrototypeProps[] = [
   },
   {
     name: "Music Match",
-    description: "Web App that suggests makeup based on their music taste.",
-    tech: "React, Firebase, Spotify API",
+    description:
+      "Web App that suggests makeup based on the user's musical tastes.",
+    tech: "React, Firebase, Spotify API, Maybelline API",
   },
   {
     name: "Mood Mirror",
@@ -140,5 +141,11 @@ export const prototypes: PrototypeProps[] = [
     description:
       "Web App that detects various beverages and displays information about them.",
     tech: "React, WebCam, TensorFlowJS",
+  },
+  {
+    name: "Beautiful Spam",
+    description:
+      "Web App that fetches a users spam emails and creates Haiku poems from their content.",
+    tech: "React, Microsoft Graph API",
   },
 ];

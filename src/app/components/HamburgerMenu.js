@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-// import Link from "next/link";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -36,20 +35,22 @@ const HamburgerMenu = () => {
         >
           <ul>
             <div className="flex flex-col">
-              {["work", "about", "skills", "awards"].map((item, index) => {
-                return (
-                  <li className="" key={`${index}-menu-item`}>
-                    <div
-                      className="capitalize font-titillium-web cursor-pointer"
-                      onClick={() => handleScroll(item)}
-                    >
-                      <div className={`${linkstyle}`}>
-                        <span className="font-bold">{item}</span>
+              {["about", "skills", "work", "proto", "awards"].map(
+                (item, index) => {
+                  return (
+                    <li className="" key={`${index}-menu-item`}>
+                      <div
+                        className="capitalize font-titillium-web cursor-pointer"
+                        onClick={() => handleScroll(item)}
+                      >
+                        <div className={`${linkstyle}`}>
+                          <span className="font-bold">{item}</span>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                );
-              })}
+                    </li>
+                  );
+                }
+              )}
 
               <li>
                 <a

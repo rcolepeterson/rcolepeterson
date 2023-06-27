@@ -17,6 +17,7 @@ const HomePage: NextPage = () => {
       <div className="bg-gray-50 px-4">
         <div className="mx-auto max-w-screen-xl py-16">
           <Prototypes prototypes={prototypes} />
+          <p className=""> and a ton more ...</p>
         </div>
       </div>
     </section>
