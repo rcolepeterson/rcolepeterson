@@ -6,7 +6,7 @@ import Logo from "./components/Logo";
 import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
 import Link from "next/link";
-
+import ScrollIndicator from "./components/scrollIndicator";
 import TopMenu from "./components/TopMenu";
 
 const HomePage: NextPage = () => {
@@ -57,6 +57,7 @@ const HomePage: NextPage = () => {
             <p className="mb-5">Maker</p> */}
           </div>
         </div>
+        <ScrollIndicator />
       </div>
 
       <div className="px-4" id="about">

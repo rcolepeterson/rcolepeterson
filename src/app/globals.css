@@ -35,3 +35,70 @@ body {
     @apply transition duration-300 ease-in-out hover:bg-opacity-90 hover:bg-white;
   }
 }
+
+.mouse-scroll-cont {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wheel {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
