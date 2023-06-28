@@ -63,7 +63,7 @@ export const awards: AwardProps[] = [
     name: "Creative Commerce Lion Grand Prix",
     client: "Hunger Station",
     description: "Subcincious Order",
-    link: "https://www.wundermanthompson.com/work/the-subconscious-order",
+    link: "https://adage.com/article/special-report-cannes-lions/cannes-lions-2023-hungerstation-subconscious-order-wins-creative-commerce-grand-prix/2500906",
     issuedBy: "Cannes Lions International Festival of Creativity",
   },
   {
@@ -85,14 +85,14 @@ export const awards: AwardProps[] = [
     name: "The Dubai Lynx Grand Prix for Mobile",
     client: "Hungerstation",
     description: "The Subconscious Order",
-    link: "https://www.wundermanthompson.com/work/the-subconscious-order",
+    link: "https://www.wundermanthompson.com/news/double-gp-at-dubai-lynx",
     issuedBy: "The Dubai Lynx",
   },
   {
     name: "Silver Clio",
     client: "Meridian",
     description: "Smallpox Simulator",
-    link: "https://www.wundermanthompson.com/news/two-gold-at-clio-health-for-wunderman-thompson-health",
+    link: "https://clios.com/health/winner/digital-mobile-social-media-craft-pharmaceutical/meridian-medical-technologies/the-smallpox-simulator-503404",
     issuedBy: "Clios",
   },
 ];
