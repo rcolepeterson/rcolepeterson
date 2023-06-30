@@ -6,7 +6,7 @@ const HamburgerMenu = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-  const handleScroll = (item) => {
+  const handleScroll = (item: string) => {
     const targetElement = document.querySelector(`#${item}`);
     if (targetElement) {
       targetElement.scrollIntoView({
