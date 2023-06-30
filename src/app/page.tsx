@@ -12,11 +12,10 @@ import TopMenu from "./components/TopMenu";
 const HomePage: NextPage = () => {
   const pStyle = "max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl";
   const headerStyle =
-    "max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl";
+    "max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl";
   return (
     <section>
       <TopMenu />
-
       <div className="hero min-h-screen bg-black">
         <div className="text-center">
           {/* https://codepen.io/alvarotrigo/pen/poOOZYZ 
@@ -30,9 +29,7 @@ const HomePage: NextPage = () => {
 
       <div className="px-4" id="about">
         <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
-            About
-          </h4>
+          <h4 className={headerStyle}>About</h4>
           <p className={clsx(pStyle, "mb-6 md:my-6")}>
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
@@ -48,9 +45,7 @@ const HomePage: NextPage = () => {
       </div>
       <div className="bg-gray-50 px-4" id="skills">
         <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
-            Skills
-          </h4>
+          <h4 className={headerStyle}>Skills</h4>
 
           <p className={pStyle}>
             JavaScript, TypeScript, React, Next.js, Node.
@@ -65,9 +60,7 @@ const HomePage: NextPage = () => {
       </div>
       <div className="bg-black text-white px-4" id="work">
         <div className="mx-auto max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
-            Work
-          </h4>
+          <h4 className={headerStyle}>Work</h4>
           {projects.map((project, i) => (
             <div
               className="flex flex-col md:flex-row pt-8 "
@@ -106,9 +99,7 @@ const HomePage: NextPage = () => {
       </div>
       <div className="bg-white px-4" id="awards">
         <div className="mx-auto  lg:col-span-7 max-w-screen-xl py-16">
-          <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
-            Awards
-          </h4>
+          <h4 className={headerStyle}>Awards</h4>
           {awards.map((award, i) => (
             <div className="flex flex-col " key={`award-stuff-${i}`}>
               <div className="pb-6">
