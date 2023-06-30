@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { projects, awards, prototypes } from "./info";
+import clsx from "clsx";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
 import Mailto from "./components/mailto";
@@ -9,6 +10,9 @@ import ScrollIndicator from "./components/scrollIndicator";
 import TopMenu from "./components/TopMenu";
 
 const HomePage: NextPage = () => {
+  const pStyle = "max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl";
+  const headerStyle =
+    "max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl";
   return (
     <section>
       <TopMenu />
@@ -29,13 +33,13 @@ const HomePage: NextPage = () => {
           <h4 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl">
             About
           </h4>
-          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600 md:text-lg lg:text-xl">
+          <p className={clsx(pStyle, "mb-6 md:my-6")}>
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
             designers, product managers, strategists, and developers to concept,
             prototype, and execute on a range of products.
           </p>
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
+          <p className={pStyle}>
             In other words, I build web apps with cool people. These creations
             end up as experiments, prototypes for pitches, and sometimes in
             production for a client.
@@ -48,10 +52,11 @@ const HomePage: NextPage = () => {
             Skills
           </h4>
 
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
+          <p className={pStyle}>
             JavaScript, TypeScript, React, Next.js, Node.
           </p>
-          <p className="max-w-2xl mt-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl">
+
+          <p className={clsx(pStyle, "mt-6")}>
             Expert in integrating various 3rd party APIs with innovative
             technology and relevant data to develop novel and imaginative
             applications.
