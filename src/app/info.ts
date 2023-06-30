@@ -121,31 +121,37 @@ export const prototypes: PrototypeProps[] = [
   {
     name: "Music Match",
     description:
-      "Web App that suggests makeup based on the user's musical tastes.",
+      "Web app that suggests makeup based on the user's musical tastes.",
     tech: "React, Firebase, Spotify API, Maybelline API",
   },
   {
     name: "Mood Mirror",
     description:
-      "Web App talks to the user about their mood, appearence and more.",
+      "Web app that talks to the user about their mood, appearence and more.",
     tech: "React, WebCam API, TensorFlowJS",
   },
   {
     name: "Bully Chat",
     description:
-      "Web App listens to the user's video game chat and detects if they are being bullied.",
+      "Web app listens to the user's video game chat and detects if they are being bullied.",
     tech: "React, Web Speech API, TensorFlowJS",
   },
   {
     name: "Beer Scan",
     description:
-      "Web App that detects various beverages and displays information about them.",
+      "Web app that detects various beverages using the users webcam and displays information about them.",
     tech: "React, WebCam, TensorFlowJS",
   },
   {
     name: "Beautiful Spam",
     description:
-      "Web App that fetches a users spam emails and creates Haiku poems from their content.",
+      "Web app that fetches a users spam emails and creates Haiku poems from their content.",
     tech: "React, Microsoft Graph API",
+  },
+  {
+    name: "Sandwich Love Letter",
+    description:
+      "Web app that uses AI to write a love letter to the user's favorite sandwich.",
+    tech: "React, OpenAI",
   },
 ];
