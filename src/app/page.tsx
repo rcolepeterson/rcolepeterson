@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import { projects, awards, prototypes } from "./info";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
-import Logo from "./components/Logo";
 import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
 import Link from "next/link";
@@ -13,54 +12,14 @@ const HomePage: NextPage = () => {
   return (
     <section>
       <TopMenu />
-      {/* <div className="bg-zinc-100 py-16 md:py-32 px-4 flex justify-center items-center relative">
-        <div className="mx-auto max-w-screen-xl text-left">
-          <h1 className="uppercase text-6xl">r. cole peterson</h1>
-          <p className="max-w-2xl mb-6 md:my-6 font-light text-gray-600 md:text-lg lg:text-xl">
-            Responsible for leading highly collaborative teams to create
-            world-class digital products and experiences. I work closely with
-            designers, product managers, strategists, and developers to concept,
-            prototype, and execute on a range of products.
-          </p>
-          <p className="max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl">
-            In other words, I build web apps with cool people. These creations
-            end up as experiments, prototypes for pitches, and sometimes in
-            production for a client.
-          </p>
-        </div>
-        <div className="hidden md:block absolute inset-0">
-          <div
-            className="h-full w-full bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/francis_peterson.jpeg')",
-            }}
-          />
-        </div>
-        <div className="md:hidden mt-8">
-          <img
-            className="w-full"
-            src="/images/francis_peterson.jpeg"
-            alt="Mountains"
-          />
-        </div>
-      </div> */}
-      <div
-        className="hero min-h-screen bg-black"
-        // style={{
-        //   backgroundImage: "url('/images/francis_peterson.jpeg')",
-        // }}
-      >
-        {/* <div className="hero-overlay bg-opacity-60"></div> */}
+
+      <div className="hero min-h-screen bg-black">
         <div className="text-center">
-          {/* https://codepen.io/alvarotrigo/pen/poOOZYZ */}
-          {/* https://alvarotrigo.com/blog/animated-backgrounds-css/ */}
+          {/* https://codepen.io/alvarotrigo/pen/poOOZYZ 
+          https://alvarotrigo.com/blog/animated-backgrounds-css/ */}
           <div className="text-container">
             <h1>MAKER</h1>
           </div>
-          {/* <div className="max-w-md text-white">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">Maker</p>
-          </div> */}
         </div>
         <ScrollIndicator />
       </div>
