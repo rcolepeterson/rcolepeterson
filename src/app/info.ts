@@ -18,7 +18,7 @@ export const projects: ProjectProps[] = [
     description:
       "The Don’t Blink Break became the world’s first AI powered staring contest.",
     image: "/images/kit-kat.webp",
-    link: "https://www.allsetrent.com/",
+    link: "https://www.allsetrent.com/kitkat-blink-break",
   },
   {
     name: "Sherwin Williams: Speaking In Color",
