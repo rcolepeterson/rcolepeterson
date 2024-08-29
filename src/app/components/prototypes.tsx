@@ -12,9 +12,9 @@ const Prototypes: React.FC<Props> = ({ prototypes }) => {
         Prototypes
       </h4>
       <p className="max-w-2xl mb-4 font-light text-gray-600 md:text-lg lg:text-xl">
-        List of some of the prototypes my team at Wunderman Thompson has built
-        for fun, pitches, and experiments. We mostly use React / NextJS,
-        Firebase, various 3rd party APIs and some custom backend stuff.
+        List of some of the prototypes my team at VML has built for fun,
+        pitches, and experiments. We mostly use React / NextJS, Firebase,
+        various 3rd party APIs and some custom backend stuff.
       </p>
       {prototypes.map((proto, i) => (
         <div className="flex flex-col " key={`proto-stuff-${i}`}>

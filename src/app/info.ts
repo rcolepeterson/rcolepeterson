@@ -7,6 +7,12 @@ type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
+    name: "Scenic Audio",
+    description: "AI-Based App for the Visually Impaired.",
+    image: "/images/Honda_SocialOGimage.png",
+    link: "https://www.scenicaudio.info/",
+  },
+  {
     name: "Subconscious Order",
     description:
       "An AI-powered camera tracks eye movements to determine food preferences and suggests relevant restaurants for ordering.",
