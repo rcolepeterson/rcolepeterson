@@ -17,7 +17,7 @@ const Prototypes: React.FC<Props> = ({ prototypes }) => {
         various 3rd party APIs and some custom backend stuff.
       </p>
       {prototypes.map((proto, i) => (
-        <div className="flex flex-col " key={`proto-stuff-${i}`}>
+        <div className="flex flex-col" key={`proto-stuff-${i}`}>
           <div className="pb-6">
             <h6 className="font-bold">{proto.name}</h6>
             <p>{proto.description}</p>

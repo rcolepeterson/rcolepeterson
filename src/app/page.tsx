@@ -30,16 +30,16 @@ const HomePage: NextPage = () => {
       <div className="px-4" id="about">
         <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
           <h4 className={headerStyle}>About</h4>
-          <p className={clsx(pStyle, "mb-6 md:my-6")}>
+          <p className={clsx(pStyle, "mb-6 md:my-6 text-gray-400")}>
             Responsible for leading highly collaborative teams to create
             world-class digital products and experiences. I work closely with
             designers, product managers, strategists, and developers to concept,
             prototype, and execute on a range of products.
           </p>
-          <p className={pStyle}>
-            In other words, I build web apps with cool people. These creations
-            end up as experiments, prototypes for pitches, and sometimes in
-            production for a client.
+          <p className={clsx(pStyle, "text-gray-400")}>
+            I build web apps with cool people. These creations end up as
+            experiments, prototypes for pitches, and sometimes in production for
+            a client.
           </p>
         </div>
       </div>
@@ -117,8 +117,9 @@ const HomePage: NextPage = () => {
             </div>
           ))}
           <Link
-            className="underline "
-            href="https://www.linkedin.com/in/colepetersonrocks/details/honors/"
+            className="underline"
+            target="_blank"
+            href="https://www.linkedin.com/in/petersoncolerobert/details/honors/"
           >
             More
           </Link>

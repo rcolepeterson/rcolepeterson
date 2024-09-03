@@ -22,7 +22,7 @@ export const projects: ProjectProps[] = [
   {
     name: "KitKat: Don't Blink",
     description:
-      "The Don’t Blink Break became the world’s first AI powered staring contest.",
+      "The Don't Blink Break became the world's first AI powered staring contest.",
     image: "/images/kit-kat.webp",
     link: "https://www.adsoftheworld.com/campaigns/the-world-s-first-ai-powered-staring-contest",
   },
@@ -35,7 +35,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Saudi Telecom Company: Meet Sarha",
-    description: "Meet Sarha – The World’s First Content-Creating Camel.",
+    description: "Meet Sarha - The World's First Content-Creating Camel.",
     image: "/images/sarha.webp",
     link: "https://www.wundermanthompson.com/work/meet-sarha",
   },
@@ -66,6 +66,13 @@ type AwardProps = {
 
 export const awards: AwardProps[] = [
   {
+    name: "Gold ADDY — Innovative Use of Interactive/Technology",
+    client: "Hunger Station",
+    description: "Subcincious Order",
+    link: "https://americanadvertisingawards.com/awards/the-subconscious-order/",
+    issuedBy: "American Advertising Awards",
+  },
+  {
     name: "Creative Commerce Lion Grand Prix",
     client: "Hunger Station",
     description: "Subcincious Order",
@@ -83,7 +90,7 @@ export const awards: AwardProps[] = [
   {
     name: "Addy's Gold & Judges Choice",
     client: "Saudi Telecom Company",
-    description: "Meet Sarha – The World’s First Content-Creating Camel",
+    description: "Meet Sarha - The World's First Content-Creating Camel",
     link: "https://www.wundermanthompson.com/work/meet-sarha",
     issuedBy: "American Advertising Federation",
   },
