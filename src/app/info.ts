@@ -66,6 +66,13 @@ type AwardProps = {
 
 export const awards: AwardProps[] = [
   {
+    name: "Data Driven Transformation Award Winner",
+    client: "Honda",
+    description: "Honda Scenic Audio",
+    link: "https://aaf.org/Public/Public/Events/Mosaic_Awards/Winners/2024/Mosaic-Awards-2024-Data-Transformation.aspx",
+    issuedBy: "American Advertising Awards / Mosaic Awards",
+  },
+  {
     name: "Gold ADDY — Innovative Use of Interactive/Technology",
     client: "Hunger Station",
     description: "Subcincious Order",
