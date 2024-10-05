@@ -126,16 +126,21 @@ export type PrototypeProps = {
 
 export const prototypes: PrototypeProps[] = [
   {
+    name: "ART X",
+    description:
+      "Fetch images of art based on a user's mood, location, local news, and the weather.",
+    tech: "React, Gemini API, Google Image API",
+  },
+  {
     name: "Banter AI",
     description:
       "Prototype designed to show the promise of real-time AI-assisted communication",
-    tech: "React, Speechly, ChatGPT-2",
-    link: "https://bantercaas.com",
+    tech: "React, Speechly, Open AI",
   },
   {
     name: "Beer Gust",
     description:
-      "Web App that discounts beer at sporting events based on the weather and the user's seat locaion.",
+      "Web App that discounts beer at sporting events based on the weather and the user's seat location.",
     tech: "React, Firebase, OpenWeather API",
   },
   {
@@ -148,7 +153,7 @@ export const prototypes: PrototypeProps[] = [
     name: "Mood Mirror",
     description:
       "Web app that talks to the user about their mood, appearence and more.",
-    tech: "React, WebCam API, TensorFlowJS",
+    tech: "React, WebCam API, TensorFlowJS, Face API",
   },
   {
     name: "Bully Chat",
@@ -160,7 +165,7 @@ export const prototypes: PrototypeProps[] = [
     name: "Beer Scan",
     description:
       "Web app that detects various beverages using the users webcam and displays information about them.",
-    tech: "React, WebCam, TensorFlowJS",
+    tech: "React, WebCam API, TensorFlowJS",
   },
   {
     name: "Beautiful Spam",
