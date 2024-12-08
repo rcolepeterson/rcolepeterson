@@ -7,6 +7,13 @@ type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
+    name: "The Voice of The Land - COP16 Riyadh",
+    description:
+      "RAG chat application showcased at the COP16 Riyadh conference",
+    image: "/images/theland.jpg",
+    link: "https://youtu.be/ae3BJHkqOtU?si=xXZKepRzvo7B2xqo",
+  },
+  {
     name: "Scenic Audio",
     description: "AI-Based App for the Visually Impaired.",
     image: "/images/Honda_SocialOGimage.png",
