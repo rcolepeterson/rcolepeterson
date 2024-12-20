@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Hi! I’m still working for VML, but I’m also looking for freelance gigs—if you hear of anything, please send them my way!
+
+I specialize in front-end and back-end web development using JavaScript, TypeScript, React, Next.js, Node.js, and Tailwind. Here’s what I can build:
+
+Websites, dashboards, landing pages, and anything UI-based
+Chatbots powered by AI (e.g., OpenAI, custom-trained models) or proprietary knowledge bases
+API integrations and automation tools
+Prototypes and experimental projects. Need a realtime talking Avatar / Agent?
+Check out my work: https://www.rcolepeterson.com/
+
+Thanks so much!
