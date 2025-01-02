@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { projects, awards, prototypes } from "./info";
+import { projects, awards, prototypes, build } from "./info";
 import clsx from "clsx";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
@@ -52,7 +52,7 @@ const HomePage: NextPage = () => {
           <h4 className={headerStyle}>Skills</h4>
 
           <p className={pStyle}>
-            JavaScript, TypeScript, React, Next.js, Node.
+            JavaScript, TypeScript, React, Next.js, Node, AI integration.
           </p>
 
           <p className={clsx(pStyle, "mt-6")}>
@@ -127,6 +127,19 @@ const HomePage: NextPage = () => {
           >
             More
           </Link>
+        </div>
+      </div>
+      <div className="px-4 bg-gray-50" id="build">
+        <div className="mx-auto lg:col-span-7 max-w-screen-xl py-16">
+          <h4 className={headerStyle}>What can I build for you?</h4>
+          {build.map((item, i) => (
+            <div className="flex flex-col " key={`award-stuff-${i}`}>
+              <div className="pb-6">
+                <h6 className="font-bold">{item.title}</h6>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="bg-black text-white px-4" id="contact">

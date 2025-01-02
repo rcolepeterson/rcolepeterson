@@ -187,3 +187,47 @@ export const prototypes: PrototypeProps[] = [
     tech: "React, OpenAI",
   },
 ];
+
+type BuildProps = {
+  title: string;
+  description: string;
+};
+
+export const build: BuildProps[] = [
+  {
+    title: "AI-Powered Custom Chatbots",
+    description:
+      "Conversational AI tailored to your needs, including advanced options like Retrieval-Augmented Generation (RAG) chatbots that can pull information from documents (like PDFs) and knowledge bases for smarter, context-aware responses.",
+  },
+  {
+    title: "Avatar Chatbots",
+    description:
+      "AI-driven avatar chatbots that combine the power of Retrieval-Augmented Generation (RAG) with realistic, interactive avatars to create dynamic, personalized conversational agents.",
+  },
+  {
+    title: "Web Development",
+    description:
+      "Beautifully designed, mobile-friendly websites and scalable, interactive applications crafted with modern frameworks like React and Next.js.",
+  },
+  {
+    title: "AI-Enhanced User Experiences",
+    description:
+      "From intelligent, context-aware search tools to personalized features, I create AI-driven solutions that elevate how users interact with your platform.",
+  },
+  {
+    title: "Data Dashboards",
+    description:
+      "Intuitive, real-time dashboards to visualize and track your data effectively.",
+  },
+  {
+    title: "API Integrations",
+    description:
+      "Seamlessly connect and integrate third-party APIs to enhance your platform’s functionality.",
+  },
+
+  {
+    title: "Prototype Development",
+    description:
+      "Quickly transform ideas into interactive prototypes that can be tested, iterated on, and used in pitches or sales presentations to showcase your vision effectively.",
+  },
+];
