@@ -7,6 +7,12 @@ type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
+    name: "The SelfGallery",
+    description: "A web application that curates art based on a user's DNA.",
+    image: "/images/SelfGallery_app_view.png",
+    link: "https://youtu.be/ViejjNMfUFE",
+  },
+  {
     name: "The Voice of The Land - COP16 Riyadh",
     description:
       "RAG chat application showcased at the COP16 Riyadh conference",

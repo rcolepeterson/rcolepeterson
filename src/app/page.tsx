@@ -82,6 +82,8 @@ const HomePage: NextPage = () => {
                 <Link
                   href={project.link}
                   className="btn mt-6 bg-primary font-bold text-black pt-4 inline-block border-transparent"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Case Study
                 </Link>
