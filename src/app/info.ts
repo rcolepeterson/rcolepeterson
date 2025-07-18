@@ -10,7 +10,7 @@ export const projects: ProjectProps[] = [
     name: "The SelfGallery",
     description: "A web application that curates art based on a user's DNA.",
     image: "/images/SelfGallery_app_view.png",
-    link: "https://youtu.be/ViejjNMfUFE",
+    link: "https://youtu.be/ViejjNMfUFE?si=Jkr7wPTYAGfYmbCQ&t=25",
   },
   {
     name: "The Voice of The Land - COP16 Riyadh",
