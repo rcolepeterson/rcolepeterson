@@ -146,7 +146,7 @@ export default function HomePage() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.linkedin.com/in/colepetersonrocks/"
+                href="https://www.linkedin.com/in/petersoncolerobert/"
                 aria-label="LinkedIn Profile"
               >
                 <LinkedinIcon />
