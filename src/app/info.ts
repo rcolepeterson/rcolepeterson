@@ -7,6 +7,13 @@ type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
+    name: "Magnifeye",
+    description:
+      "AI tool that scans family photos for early signs of childhood myopia.",
+    image: "/images/magnifeye.jpg",
+    link: "https://campaignbrief.com/1001-optometry-launches-world-first-magnif-eye-tool-with-vml-that-turns-parents-camera-rolls-into-early-eye-screening-for-children/",
+  },
+  {
     name: "The SelfGallery",
     description: "A web application that curates art based on a user's DNA.",
     image: "/images/SelfGallery_app_view.png",
