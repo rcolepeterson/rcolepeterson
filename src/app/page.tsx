@@ -28,15 +28,21 @@ export default function HomePage() {
         <div className="mx-auto max-w-screen-xl py-16">
           <h2 className={headerStyle}>About</h2>
           <p className="mb-6 md:my-6 text-gray-400 max-w-2xl md:text-lg lg:text-xl">
-            Responsible for leading highly collaborative teams to create
-            world-class digital products and experiences. I work closely with
-            designers, product managers, strategists, and developers to concept,
-            prototype, and execute on a range of products.
+            2x Cannes Lions Grand Prix Winner and Director of Creative
+            Technology at VML.
+          </p>
+          <p className="mb-6 md:my-6 text-gray-400 max-w-2xl md:text-lg lg:text-xl">
+            I&apos;ve spent the last decade building AI-powered experiences at
+            the edge of what&apos;s possible — from the world&apos;s first AI
+            staring contest for KitKat to a voice-activated color system for
+            Sherwin Williams. Today I&apos;m focused on orchestrating
+            multi-agent AI systems that drive real business outcomes for
+            clients.
           </p>
           <p className="text-gray-400 max-w-2xl md:text-lg lg:text-xl">
-            I build web apps with cool people. These creations end up as
-            experiments, prototypes for pitches, and sometimes in production for
-            clients.
+            I work hands-on with an ever-growing ecosystem of agent frameworks
+            and platforms. I love building with small, talented teams that move
+            fast and make things that matter.
           </p>
         </div>
       </div>
@@ -45,12 +51,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-screen-xl py-16">
           <h2 className={headerStyle}>Skills</h2>
           <p className={pStyle}>
-            JavaScript, TypeScript, React, Next.js, Node, AI integration.
+            Agent Orchestration. Generative AI. Rapid Prototyping. Full Stack
+            Development. Creative Technology.
           </p>
           <p className={clsx(pStyle, "mt-6")}>
-            Expert in integrating various 3rd party APIs with innovative
-            technology and relevant data to develop novel and imaginative
-            applications.
+            From award-winning campaigns to production AI systems, I turn
+            ambitious ideas into real products that work — and make clients
+            money.
           </p>
         </div>
       </div>
