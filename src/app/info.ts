@@ -208,39 +208,33 @@ type BuildProps = {
 
 export const build: BuildProps[] = [
   {
-    title: "AI-Powered Custom Chatbots",
+    title: "AI Agent Systems",
     description:
-      "Conversational AI tailored to your needs, including advanced options like Retrieval-Augmented Generation (RAG) chatbots that can pull information from documents (like PDFs) and knowledge bases for smarter, context-aware responses.",
+      "Design and build multi-agent AI pipelines that automate complex workflows, make decisions, and scale intelligently. From architecture to deployment.",
   },
   {
-    title: "Avatar Chatbots",
+    title: "RAG & Knowledge Systems",
     description:
-      "AI-driven avatar chatbots that combine the power of Retrieval-Augmented Generation (RAG) with realistic, interactive avatars to create dynamic, personalized conversational agents.",
+      "Intelligent systems that pull from your documents, databases, and knowledge bases to deliver accurate, context-aware responses — far beyond a basic chatbot.",
+  },
+  {
+    title: "Generative AI Experiences",
+    description:
+      "Award-winning, production-ready AI experiences that connect your brand to users in ways that feel genuinely new. Built to work and built to impress.",
+  },
+  {
+    title: "Rapid Prototyping",
+    description:
+      "Turn ambitious ideas into interactive, testable prototypes fast. Great for pitches, innovation sprints, and proving out concepts before full investment.",
   },
   {
     title: "Web Development",
     description:
-      "Beautifully designed, mobile-friendly websites and scalable, interactive applications crafted with modern frameworks like React and Next.js.",
-  },
-  {
-    title: "AI-Enhanced User Experiences",
-    description:
-      "From intelligent, context-aware search tools to personalized features, I create AI-driven solutions that elevate how users interact with your platform.",
+      "Fast, scalable, beautifully crafted web applications built with modern tools and a sharp eye for what actually converts.",
   },
   {
     title: "Data Dashboards",
     description:
-      "Intuitive, real-time dashboards to visualize and track your data effectively.",
-  },
-  {
-    title: "API Integrations",
-    description:
-      "Seamlessly connect and integrate third-party APIs to enhance your platform’s functionality.",
-  },
-
-  {
-    title: "Prototype Development",
-    description:
-      "Quickly transform ideas into interactive prototypes that can be tested, iterated on, and used in pitches or sales presentations to showcase your vision effectively.",
+      "Real-time dashboards that make complex data clear, actionable, and easy to act on.",
   },
 ];
