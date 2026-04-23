@@ -34,7 +34,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/cp_image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "R. Cole Peterson — Maker & Creative Developer",
@@ -46,7 +46,7 @@ export const metadata = {
     description: desc,
     card: "summary_large_image",
     creator: "@rcolepeterson",
-    images: ["/cp_image.png"],
+    images: ["/og-image.png"],
   },
 };
 
