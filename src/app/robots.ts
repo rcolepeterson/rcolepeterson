@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rcolepeterson.com/sitemap.xml",
+    sitemap: "https://www.rcolepeterson.com/sitemap.xml",
   };
 }

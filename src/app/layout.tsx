@@ -11,7 +11,7 @@ const desc =
 export const metadata = {
   title: title,
   description: desc,
-  metadataBase: new URL("https://rcolepeterson.com"),
+  metadataBase: new URL("https://www.rcolepeterson.com"),
   keywords: [
     "R. Cole Peterson",
     "Creative Developer",
@@ -24,11 +24,11 @@ export const metadata = {
     "Cannes Lions",
     "Portfolio",
   ],
-  authors: [{ name: "R. Cole Peterson", url: "https://rcolepeterson.com" }],
+  authors: [{ name: "R. Cole Peterson", url: "https://www.rcolepeterson.com" }],
   openGraph: {
     title: title,
     description: desc,
-    url: "https://rcolepeterson.com/",
+    url: "https://www.rcolepeterson.com/",
     siteName: title,
     locale: "en-US",
     type: "website",
