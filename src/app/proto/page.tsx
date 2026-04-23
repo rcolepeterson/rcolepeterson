@@ -1,8 +1,22 @@
 import { NextPage } from "next";
+import { Metadata } from "next";
 import Prototypes from "../components/prototypes";
 import Logo from "../components/Logo";
 import { prototypes } from "../info";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Prototypes — R. Cole Peterson",
+  description:
+    "A collection of prototypes and experiments by R. Cole Peterson, exploring AI, creative technology, and interactive experiences.",
+  openGraph: {
+    title: "Prototypes — R. Cole Peterson",
+    description:
+      "A collection of prototypes and experiments by R. Cole Peterson, exploring AI, creative technology, and interactive experiences.",
+    url: "https://rcolepeterson.com/proto",
+  },
+};
+
 const HomePage: NextPage = () => {
   return (
     <section>

@@ -8,12 +8,36 @@ import Link from "next/link";
 import ScrollIndicator from "./components/scrollIndicator";
 import TopMenu from "./components/TopMenu";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "R. Cole Peterson",
+  url: "https://rcolepeterson.com",
+  image: "https://rcolepeterson.com/cp_image.png",
+  sameAs: [
+    "https://www.linkedin.com/in/petersoncolerobert/",
+    "https://github.com/rcolepeterson/",
+    "https://twitter.com/rcolepeterson",
+  ],
+  jobTitle: "Director of Creative Technology",
+  worksFor: {
+    "@type": "Organization",
+    name: "VML",
+  },
+  description:
+    "2x Cannes Lions Grand Prix Winner and Director of Creative Technology at VML, specializing in AI-powered experiences and agent orchestration.",
+};
+
 export default function HomePage() {
   const pStyle = "max-w-2xl font-light text-gray-600 md:text-lg lg:text-xl";
   const headerStyle =
     "max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-3xl";
   return (
     <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <TopMenu />
       <div className="hero min-h-screen bg-black">
         <div className="text-center">

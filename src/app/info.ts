@@ -30,7 +30,7 @@ export const projects: ProjectProps[] = [
     name: "Scenic Audio",
     description: "AI-Based App for the Visually Impaired.",
     image: "/images/Honda_SocialOGimage.png",
-    link: "https://www.scenicaudio.info/",
+    link: "https://youtu.be/5prUMZXC0Dc?si=49SOgRSpAhUyd7ey",
   },
   {
     name: "Subconscious Order",
