@@ -11,7 +11,7 @@ export const projects: ProjectProps[] = [
     description:
       "AI tool that scans family photos for early signs of childhood myopia.",
     image: "/images/magnifeye.jpg",
-    link: "https://campaignbrief.com/1001-optometry-launches-world-first-magnif-eye-tool-with-vml-that-turns-parents-camera-rolls-into-early-eye-screening-for-children/",
+    link: "https://www.vml.com/work/magnifeye",
   },
   {
     name: "The SelfGallery",
