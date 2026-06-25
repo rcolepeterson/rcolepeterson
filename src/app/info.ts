@@ -9,7 +9,7 @@ export const projects: ProjectProps[] = [
   {
     name: "Magnifeye",
     description:
-      "AI tool that scans family photos for early signs of childhood myopia.",
+      "AI tool that scans family photos for early signs of childhood myopia. 15 Cannes Lions shortlists and a Silver Lion in Health & Wellness.",
     image: "/images/magnifeye.jpg",
     link: "https://www.vml.com/work/magnifeye",
   },
