@@ -86,6 +86,13 @@ type AwardProps = {
 
 export const awards: AwardProps[] = [
   {
+    name: "Silver Lion — Health & Wellness",
+    client: "1001 Optometry",
+    description: "Magnifeye",
+    link: "https://campaignbrief.com/vml-sydney-wins-silver-lion-for-1001-optometrys-magnif-eye-in-cannes-health-wellness-lions/",
+    issuedBy: "Cannes Lions International Festival of Creativity",
+  },
+  {
     name: "Data Driven Transformation Award Winner",
     client: "Honda",
     description: "Honda Scenic Audio",
