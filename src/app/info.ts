@@ -15,7 +15,8 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "The SelfGallery",
-    description: "A web application that curates art based on a user's DNA.",
+    description:
+      "A web application that curates art based on a user's DNA. 2 Cannes Lions shortlists in 2025.",
     image: "/images/SelfGallery_app_view.png",
     link: "https://youtu.be/ViejjNMfUFE?si=Jkr7wPTYAGfYmbCQ&t=25",
   },
@@ -28,7 +29,8 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Scenic Audio",
-    description: "AI-Based App for the Visually Impaired.",
+    description:
+      "AI-Based App for the Visually Impaired. Data Driven Transformation Award winner.",
     image: "/images/Honda_SocialOGimage.png",
     link: "https://youtu.be/5prUMZXC0Dc?si=49SOgRSpAhUyd7ey",
   },
@@ -49,20 +51,21 @@ export const projects: ProjectProps[] = [
   {
     name: "Sherwin Williams: Speaking In Color",
     description:
-      "Voice-activated AI color system that produces hues based on human inspiration.",
+      "Voice-activated AI color system that produces hues based on human inspiration. Cannes Lions Creative B2B Grand Prix winner.",
     image: "/images/sic.webp",
     link: "https://www.wundermanthompson.com/work/speaking-in-color",
   },
   {
     name: "Saudi Telecom Company: Meet Sarha",
-    description: "Meet Sarha - The World's First Content-Creating Camel.",
+    description:
+      "Meet Sarha - The World's First Content-Creating Camel. Gold ADDY & Judges Choice winner.",
     image: "/images/sarha.webp",
     link: "https://www.wundermanthompson.com/work/meet-sarha",
   },
   {
     name: "Smallpox Simulator",
     description:
-      "The tool, created for Meridian, maps how potential outbreaks might occur throughout the world.",
+      "The tool, created for Meridian, maps how potential outbreaks might occur throughout the world. Silver Clio winner.",
     image: "/images/smallpox-simulator.webp",
     link: "https://www.wundermanthompson.com/work/smallpox-simulator",
   },
