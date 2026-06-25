@@ -35,7 +35,7 @@ export const projects: ProjectProps[] = [
   {
     name: "Subconscious Order",
     description:
-      "An AI-powered camera tracks eye movements to determine food preferences and suggests relevant restaurants for ordering.",
+      "An AI-powered camera tracks eye movements to determine food preferences and suggests relevant restaurants for ordering. Cannes Lions Creative Commerce Grand Prix, Dubai Lynx Grand Prix, and Gold ADDY winner.",
     image: "/images/hungerstation-seo-image.png",
     link: "https://www.wundermanthompson.com/work/the-subconscious-order",
   },
