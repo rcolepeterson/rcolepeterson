@@ -1,8 +1,15 @@
+export type ProjectRole = {
+  whatIOwned: string;
+  whatISolved: string;
+  outcome: string;
+};
+
 type ProjectProps = {
   name: string;
   description: string;
   image: string;
   link: string;
+  role?: ProjectRole;
 };
 
 export const projects: ProjectProps[] = [
@@ -12,6 +19,13 @@ export const projects: ProjectProps[] = [
       "AI tool that scans family photos for early signs of childhood myopia. 15 Cannes Lions shortlists and a Silver Lion in Health & Wellness.",
     image: "/images/magnifeye.jpg",
     link: "https://www.vml.com/work/magnifeye",
+    role: {
+      whatIOwned:
+        "Lead Creative Technologist & Full-Stack Engineer. Built the initial prototype to win the client pitch, integrated the production front-end with the ML inference API, and partnered with client IT to launch.",
+      whatISolved:
+        "Resolved ML latency bottlenecks by re-architecting the asynchronous service pipeline across the onboarding flow—eliminating perceived load friction while preserving diagnostic accuracy.",
+      outcome: "Silver Lion (Health & Wellness), 15 Cannes Shortlists.",
+    },
   },
   {
     name: "The SelfGallery",

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
 import Mailto from "./components/mailto";
 import Prototypes from "./components/prototypes";
+import ProjectRole from "./components/ProjectRole";
 import Link from "next/link";
 import ScrollIndicator from "./components/scrollIndicator";
 import TopMenu from "./components/TopMenu";
@@ -91,7 +92,7 @@ export default function HomePage() {
           <h2 className={headerStyle}>Work</h2>
           {projects.map((project, i) => (
             <div
-              className="flex flex-col md:flex-row pt-8"
+              className="flex flex-col md:flex-row md:items-start pt-8"
               key={`project-${i}`}
             >
               <Image
@@ -99,18 +100,22 @@ export default function HomePage() {
                 alt={project.name}
                 width={400}
                 height={225}
+                className="w-full h-auto md:w-[400px] md:flex-shrink-0"
               />
-              <div className="py-6 md:ml-6">
+              <div className="py-6 md:ml-6 md:min-w-0">
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
-                <Link
-                  href={project.link}
-                  className="btn mt-6 bg-primary font-bold text-black pt-4 inline-block border-transparent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Case Study
-                </Link>
+                <div className="mt-6 flex flex-wrap items-center gap-4">
+                  <Link
+                    href={project.link}
+                    className="btn bg-primary font-bold leading-none text-black inline-flex items-center justify-center border-transparent"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Case Study
+                  </Link>
+                  {project.role && <ProjectRole role={project.role} />}
+                </div>
               </div>
             </div>
           ))}
