@@ -62,6 +62,14 @@ export const projects: ProjectProps[] = [
       "An AI-powered camera tracks eye movements to determine food preferences and suggests relevant restaurants for ordering. Cannes Lions Creative Commerce Grand Prix, Dubai Lynx Grand Prix, and Gold ADDY winner.",
     image: "/images/hungerstation-seo-image.png",
     link: "https://www.wundermanthompson.com/work/the-subconscious-order",
+    role: {
+      whatIOwned:
+        "Lead Creative Technologist & Full-Stack Engineer. Built the winning prototype and production application, set up database architecture, and partnered with data scientists to translate ML models into cloud scripts and production APIs.",
+      whatISolved:
+        "Benchmarked and integrated client-side computer vision models for browser-based eye tracking via device cameras. Designed aggressive image and data caching pipelines to ensure real-time, zero-lag gaze analysis and instant UI response.",
+      outcome:
+        "Cannes Lions Creative Commerce Grand Prix. Driven 2.5M media impressions, 630,000 portal visits, and 78,000 new customers (6,000/day) in the first two weeks.",
+    },
   },
   {
     name: "KitKat: Don't Blink",
