@@ -33,6 +33,14 @@ export const projects: ProjectProps[] = [
       "A web application that curates art based on a user's DNA. 2 Cannes Lions shortlists in 2025.",
     image: "/images/SelfGallery_app_view.png",
     link: "https://youtu.be/ViejjNMfUFE?si=Jkr7wPTYAGfYmbCQ&t=25",
+    role: {
+      whatIOwned:
+        "Lead Creative Technologist & Front-End Architect. Built the winning pitch prototype, engineered the production React/WebGL scrollytelling application, and integrated OpenAI for natural language ancestry interpretation. Architected the Firebase/Firestore backend and component system.",
+      whatISolved:
+        "Engineered a resilient WebGL rendering pipeline capable of fluidly displaying 100+ high-resolution visual assets alongside real-time LLM-generated copy. Implemented virtualized asset loading, pre-calculated layout matrices, and a device-capability detection framework with automated WebGL fallbacks—ensuring 60fps performance across low-power mobile browsers without context crashes.",
+      outcome:
+        "2x Cannes Lions Shortlist (Creative Data). 100k+ visits, 85,000 custom galleries created, and a 35% lift in client DNA test sales.",
+    },
   },
   {
     name: "The Voice of The Land - COP16 Riyadh",
