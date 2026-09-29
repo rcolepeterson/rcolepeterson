@@ -1,4 +1,11 @@
-import { projects, awards, prototypes, build } from "./info";
+import {
+  projects,
+  awards,
+  prototypes,
+  build,
+  independentWork,
+  independentWorkSectionTitle,
+} from "./info";
 import clsx from "clsx";
 import Image from "next/image";
 import { GitHubIcon, TwitterIcon, LinkedinIcon } from "./components/icons";
@@ -128,6 +135,52 @@ export default function HomePage() {
           <Link href={"/proto"} className="mt-6 underline">
             More
           </Link>
+        </div>
+      </div>
+
+      <div className="bg-black text-white px-4" id="independent">
+        <div className="mx-auto max-w-screen-xl py-16">
+          <h2 className={headerStyle}>{independentWorkSectionTitle}</h2>
+          {independentWork.map((item, i) => (
+            <div
+              className="flex flex-col md:flex-row md:items-start pt-8"
+              key={`independent-${i}`}
+            >
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={400}
+                  height={225}
+                  className="w-full h-auto md:w-[400px] md:flex-shrink-0"
+                />
+              ) : (
+                <div className="w-full aspect-[16/9] md:w-[400px] md:flex-shrink-0 flex items-center justify-center border border-white/10 bg-white/5 px-4 text-center">
+                  <h3 className="font-bold">{item.name}</h3>
+                </div>
+              )}
+              <div className="py-6 md:ml-6 md:min-w-0">
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <div className="mt-6 flex flex-wrap items-center gap-4">
+                  <Link
+                    href={item.caseStudyLink}
+                    className="btn bg-primary font-bold leading-none text-black inline-flex items-center justify-center border-transparent"
+                  >
+                    Case Study
+                  </Link>
+                  <Link
+                    href={item.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn bg-transparent font-bold leading-none text-white inline-flex items-center justify-center border-2 border-white/60 hover:bg-white hover:text-black hover:border-white"
+                  >
+                    Live Prototype
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

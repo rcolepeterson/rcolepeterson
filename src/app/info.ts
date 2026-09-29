@@ -241,6 +241,31 @@ export const prototypes: PrototypeProps[] = [
   },
 ];
 
+// Section heading is a single editable string so it can be renamed in one place.
+export const independentWorkSectionTitle = "Independent Work";
+
+type IndependentWorkProps = {
+  name: string;
+  description: string;
+  // Thumbnail for the card. Leave empty to render a styled placeholder
+  // (site palette + title) instead — swap in a real screenshot path here
+  // whenever one exists, no other changes needed.
+  image: string;
+  caseStudyLink: string;
+  liveLink: string;
+};
+
+export const independentWork: IndependentWorkProps[] = [
+  {
+    name: "The Lost Matches",
+    description:
+      "Reconstructing historic sporting events from fragments — fan photos, ticket stubs, living memory — with the gaps shown honestly instead of hidden. A working prototype and a case study on designing AI products for trust and uncertainty.",
+    image: "/images/Battle_of_the_Sexes_(Tennis).jpg",
+    caseStudyLink: "/independent/the-lost-matches",
+    liveLink: "https://the-lost-matches.vercel.app/",
+  },
+];
+
 type BuildProps = {
   title: string;
   description: string;
